@@ -1,0 +1,123 @@
+
+body{
+    background-image: url("greenCode.jpg"); /* Image from FreePik here page=1&position=3&uuid=a8be1121-2990-4692-9cab-9d6aee347f52&query=Binary+Background */
+    background-size: cover;  /* Prevents stretching */
+    background-repeat: no-repeat;
+    background-position: center top; /* Keeps it in place */
+    background-attachment: fixed; /* Ensures it doesn't move with scrolling */
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1; /* Make sure body stays behind other elements */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1{
+    color: white;
+}
+.monitorBlocks{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    width: 750px;
+    height: 200px; 
+    flex-wrap: nowrap;
+    gap: 20px; 
+}
+
+
+.blockOne, .blockTwo, .blockThree{
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blurs background behind the div */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for contrast */
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white; 
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Styling within each block */
+/* Progress Bar */
+/* Circular progress bar */
+/* Circular progress container */
+.circle {
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The circular progress bar itself */
+.circle .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 50%;
+}
+
+/* Number inside the circle */
+.circle .number {
+    font-size: 24px;
+    font-weight: 400; /* Medium weight */
+    color: white/* Same color as progress bar */
+}
+
+/* Label under the circle */
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: white;
+}
+
+
+/*Monitor Style */
+/* Main container for results */
+.monitorResults{
+    width: 100%;
+    max-width: 1000px; /* Makes this block larger than the others */
+    height: 300px; /* Adjust to fit content */
+    background: rgba(255, 255, 255, 0.2); /* Frosted effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-align: center; border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for contrast */
+}
